@@ -1,0 +1,244 @@
+body {
+  background-repeat: no-repeat;
+  height: 97.5vh;
+  background-size: contain;
+  font-family: Barlow Semi Condensed;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+      360deg,
+      hsl(214, 47%, 23%) 0%,
+      hsl(237, 49%, 15%) 100%
+    )
+    hsl(237, 49%, 15%) 100%;
+  color: white;
+}
+.all {
+  display: flex;
+  height: fit-content;
+  justify-content: space-around;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+.container1 {
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 10px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  min-width: 40%;
+}
+.title {
+  font-weight: 700;
+  font-size: 30px;
+}
+.container3 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  min-width: 20%;
+  min-height: 15%;
+  color: hsl(229, 25%, 31%);
+}
+.score-title {
+  color: hsl(229, 64%, 46%);
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 12%;
+}
+.score {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: -5%;
+}
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+.first-two {
+  display: flex;
+  justify-content: space-around;
+}
+.third {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.button-paper {
+  background-color: white;
+  border: 20px solid hsl(230, 89%, 62%);
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  margin-right: 5%;
+}
+.button-scissors {
+  background-color: white;
+  border: 20px solid hsl(39, 89%, 49%);
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+.button-rock {
+  background-color: white;
+  border: 20px solid hsl(349, 71%, 52%);
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+.use {
+  display: flex;
+  justify-content: space-between;
+  min-width: 30%;
+}
+.rules {
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+}
+.rules-button {
+  background: transparent;
+  border: 2px solid rgb(204, 204, 204);
+  padding: 6px 20px;
+  color: white;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-top: 5%;
+}
+button:active {
+  opacity: 0.6;
+}
+.useful {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4%;
+}
+.result-container {
+  display: flex;
+  justify-content: space-between;
+  min-width: 45%;
+}
+.cont1,
+.cont3 {
+  display: flex;
+  flex-direction: column;
+}
+.cont2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.title2 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20%;
+}
+.result-title {
+  margin-bottom: -50%;
+  font-size: 40px;
+  font-weight: 700;
+}
+.play-again {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 12px;
+  width: 100%;
+  color: hsl(229, 25%, 31%);
+}
+.rules-container {
+  position: fixed;
+  top:21%;
+  left:38.5%;
+  background-color: white;
+  
+  border-radius: 10px;
+}
+.cont4 {
+display: flex;
+justify-content: space-around;
+margin : 0 -20% 6% -20%;
+}
+.rules-title {
+  font-size: 35px;
+  font-weight: 700;
+  color:hsl(229, 64%, 46%);
+}
+.x-button {
+  background: transparent;
+  border: none;
+  color:hsl(229, 25%, 31%);
+  font-size: 30px;
+  
+}
+.use2 {
+  padding:20px;
+}
+.triangle-img {
+  position: fixed;
+  top:39%;
+  left:40%;
+  z-index: -1;
+}
+
+@media (max-width: 600px) {
+  .button-paper,
+  .button-scissors,
+  .button-rock {
+    width: 140px;
+    height: 140px;
+    border-width: 10px;
+  }
+  .container1 {
+    flex-direction: column;
+    padding: 10px;
+    transform: scale(0.8)
+  }
+  .result-container {
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 6%;
+  }
+  .triangle-img {
+    left:0%;
+    top:48%;
+    transform: scale(0.8);
+  }
+  .rules-container {
+    position: fixed;
+    top:36%;
+    left:-8%;
+    transform: scale(0.7);
+  }
+  .useful {
+    display: flex;
+    justify-content: space-around;
+    margin-top:-25%
+  }
+ 
+  .cont1,.cont3 {
+    transform: scale(0.8);
+  }
+  .cont2 {
+    margin: -20% 0;
+    transform: scale(0.7);
+  }
+  .play-again {
+    margin: 60% 0
+  }
+  .title2 {
+    margin-bottom: 10%;
+  }
+  .cont3 {
+    margin-top: -40%;
+  }
+}

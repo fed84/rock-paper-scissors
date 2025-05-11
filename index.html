@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock paper scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="all">
+      <div class="container1">
+        <div class="container2">
+          <div class="title">ROCK</div>
+          <div class="title">PAPER</div>
+          <div class="title">SCISSORS</div>
+        </div>
+        <div class="container3">
+          <div class="score-title">SCORE</div>
+          <div class="score"></div>
+        </div>
+      </div>
+    </div>
+    <div class="button-container">
+      <div class="first-two">
+        <div class="use">
+          <button class="button-paper" onclick="playgame('paper')">
+            <img src="images/icon-paper.svg" />
+          </button>
+          <button class="button-scissors" onclick="playgame('scissors')">
+            <img src="images/icon-scissors.svg" />
+          </button>
+        </div>
+      </div>
+      <div class="third">
+        <button class="button-rock" onclick="playgame('rock')">
+          <img src="images/icon-rock.svg" />
+        </button>
+      </div>
+      <img class="triangle-img" src="images/bg-triangle.svg">
+      <div class="rules"><button class="rules-button" onclick="showRules()">RULES</button></div>
+      <div class="rules-container"></div>
+    </div>
+   
+  </body>
+  <script src="script.js"></script>
+</html>
